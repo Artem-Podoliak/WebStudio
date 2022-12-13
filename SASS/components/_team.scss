@@ -1,3 +1,22 @@
+.team-list {
+    @media screen and (max-width: 767px) {
+        display: block;
+        
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc(100%/2 - 15px);
+        margin: -30px;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        
+    }
+}
 .team__title {
     font-size: 36px;
     line-height: 1.17;
@@ -6,7 +25,18 @@
     margin-bottom: 50px;
 }
 .team-list__item {
-    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+        margin-top: 15px;
+
+    }
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+    }
+
     border-radius: 0px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -14,7 +44,10 @@
     background-color: $hero-text-color;
 
     &:last-child {
-    margin-right: 0;
+        @media screen and (min-width: 1200px) {
+            margin-right: 0;
+        }
+    
     }
 }
 .team-list__cards {
@@ -42,4 +75,16 @@
 .team {
     margin-bottom: 0;
     background-color: #F5F4FA;
+    @media screen and (max-width: 767px) {
+        width: 480px;
+        margin-bottom: 0;
+        background-color: #F5F4FA;
+    }
+    @media screen and (min-width: 768px) {
+        
+    }
+    @media screen and (min-width: 1200px) {
+
+    }
+
 } 
