@@ -647,10 +647,29 @@ img {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .addres-list {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .addres-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .addres-list {
+    margin-bottom: 0;
+  }
+}
+
 .foot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -666,7 +685,6 @@ img {
 }
 
 .logo-footer {
-  display: inline-block;
   margin-bottom: 28px;
   font-family: "Raleway";
   font-style: normal;
@@ -674,6 +692,21 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1199px) {
+  .logo-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    display: inline-block;
+  }
 }
 
 .logo-color {
@@ -691,9 +724,29 @@ img {
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1199px) {
+  .address-txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-txt {
+    display: inline-block;
+  }
+}
 
 .address-list {
-  display: inline-block;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .address-list {
+    display: inline-block;
+  }
 }
 
 .address-list__item {
@@ -719,6 +772,21 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
   transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+}
+@media screen and (max-width: 1199px) {
+  .contact-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-footer {
+    display: inline-block;
+  }
 }
 
 .join {
@@ -845,6 +913,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mailing-button {
