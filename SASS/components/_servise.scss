@@ -1,6 +1,10 @@
 .servise {
+    display: none;
     padding-top: 0;
     padding-bottom:  94px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 .servise-title {
     font-size: 36px;

@@ -17,18 +17,32 @@
      url("../img/img-hero.jpg");
 }
 .hero__title {
-    width: 696PX;
+    
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30PX;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.615;
     text-align: center;
     letter-spacing: 0.06em;
     color: $hero-text-color;
     
+    @media screen and (min-width: 480px) {
+        
+
+    }
+    @media screen and (min-width: 768px) {
+        
+        
+    }
+    @media screen and (min-width: 1200px) {
+        width: 696PX;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 .pledge {
     display: flex;
