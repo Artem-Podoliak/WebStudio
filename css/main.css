@@ -790,9 +790,13 @@ img {
 }
 
 .join {
-  margin-left: 70px;
-  width: 206px;
   height: 80px;
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+    width: 206px;
+  }
 }
 
 .join__txt {

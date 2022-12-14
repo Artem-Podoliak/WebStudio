@@ -19,14 +19,16 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    
+
 }
 .footer {
     display: flex;
     
+    
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
+
 }
 .logo-footer {
     
@@ -69,8 +71,10 @@
 }
 .address-list {
     display: block;
+    
     @media screen and (min-width: 1200px) {
         display: inline-block;
+        
     }
     
 }
