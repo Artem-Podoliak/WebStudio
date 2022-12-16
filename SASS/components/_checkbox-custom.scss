@@ -3,9 +3,17 @@
     justify-content: center;
     display: inline-flex;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 425px;
+
+    
+    @media screen and (max-width: 1199px) {
+        width: 370px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 425px;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
     
 }
 .checkbox-input {
@@ -17,21 +25,34 @@
     margin-left: 30px;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+
 
     letter-spacing: 0.03em;
 
     color: rgba(117, 117, 117, 1);
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.166;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.714;
+    }
 }
 .checkbox-link {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
     text-decoration: underline;
 
     letter-spacing: 0.03em;
     color: rgba(33, 150, 243, 1);
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.166;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.714;
+    }
 }
 .checkbox-custom {
     position: absolute;

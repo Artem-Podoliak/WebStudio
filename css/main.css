@@ -647,15 +647,16 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .addres-list {
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .addres-list {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .addres-list {
+    margin: 0px 165px 60px 76px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -664,15 +665,34 @@ img {
   }
 }
 
-.foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (max-width: 767px) {
+  .foot {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer {
@@ -716,6 +736,12 @@ img {
 .addres {
   font-style: normal;
   width: 231px;
+}
+@media screen and (max-width: 767px) {
+  .addres {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .address-txt {
@@ -792,6 +818,11 @@ img {
 .join {
   height: 80px;
 }
+@media screen and (max-width: 1199px) {
+  .join {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .join {
     margin-left: 70px;
@@ -809,6 +840,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1199px) {
+  .join__txt {
+    text-align: center;
+  }
 }
 
 .join-list {
@@ -867,8 +903,18 @@ img {
 
 .mailing {
   display: block;
-  width: 570px;
-  margin-left: 93px;
+}
+@media screen and (max-width: 1199px) {
+  .mailing {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing {
+    width: 570px;
+    margin-left: 93px;
+  }
 }
 
 .mailing-txt {
@@ -880,10 +926,14 @@ img {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1199px) {
+  .mailing-txt {
+    text-align: center;
+  }
+}
 
 .mailing-input {
   padding: 15px 16px;
-  width: 358px;
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -912,6 +962,17 @@ img {
   transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
 }
+@media screen and (max-width: 1199px) {
+  .mailing-input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing-input {
+    width: 358px;
+  }
+}
 
 .mailing-div {
   display: -webkit-box;
@@ -919,6 +980,11 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (max-width: 1199px) {
+  .mailing-div {
+    display: block;
+  }
 }
 
 .mailing-button {
@@ -928,7 +994,6 @@ img {
   width: 200px;
   height: 50px;
   padding: 10px 28px;
-  margin-left: 12px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -958,6 +1023,20 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
   transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+}
+@media screen and (max-width: 1199px) {
+  .mailing-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing-button {
+    margin-left: 12px;
+  }
 }
 
 .mailing-svg {
@@ -989,8 +1068,6 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 40px;
-  width: 528px;
-  height: 581px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -999,6 +1076,18 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
   transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-buton {
@@ -1064,13 +1153,22 @@ img {
 
 .user-input {
   display: block;
-  width: 448px;
   padding: 11px 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 .user-input:focus + .user-svg {
   fill: #2196F3;
+}
+@media screen and (max-width: 1199px) {
+  .user-input {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .user-input {
+    width: 448px;
+  }
 }
 
 .input-div {
@@ -1087,7 +1185,6 @@ img {
 
 .user-coment {
   display: block;
-  width: 448px;
   height: 120px;
   padding: 12px 16px;
   resize: none;
@@ -1102,6 +1199,16 @@ img {
   letter-spacing: 0.01em;
   color: #212121;
 }
+@media screen and (max-width: 1199px) {
+  .user-coment {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .user-coment {
+    width: 448px;
+  }
+}
 
 .checkbox-div {
   position: relative;
@@ -1112,9 +1219,18 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 425px;
+}
+@media screen and (max-width: 1199px) {
+  .checkbox-div {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-div {
+    width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .checkbox-input {
@@ -1126,19 +1242,39 @@ img {
 .checkbox-txt {
   margin-left: 30px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
+}
+@media screen and (max-width: 1199px) {
+  .checkbox-txt {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-txt {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .checkbox-link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   text-decoration: underline;
   letter-spacing: 0.03em;
   color: rgb(33, 150, 243);
+}
+@media screen and (max-width: 1199px) {
+  .checkbox-link {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-link {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .checkbox-custom {
