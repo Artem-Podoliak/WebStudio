@@ -21,6 +21,37 @@
         <!-- лого-->
         <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
         <!--силки-->
+        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="переключатель мобільного меню">
+            <use class="icon-menu" href="./img/icons.svg#menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40" aria-label="переключатель мобільного меню">
+              <use class="icon-close" href="./img/icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-list__item"><a href="" class="mobile-menu-list__link  active-page">Студія </a></li>
+            <li class="mobile-menu-list__item"><a href="./portfolio.html" class="mobile-menu-list__link">Портфоліо</a></li>
+            <li class="mobile-menu-list__item"><a href="" class="mobile-menu-list__link">Контакти</a></li>
+          </ul>
+          <ul>
+            <li class="contact-list">
+              <a href="mailto:info@devstudio.com" class="contact-list__link">
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="contact-list__link">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation-list__item"><a href="" class="navigation-list__link  active-page">Студія </a></li>
@@ -471,6 +502,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

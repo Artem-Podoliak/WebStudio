@@ -1,9 +1,20 @@
 .contact {
-    margin-left: auto;     
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+        @media screen and (max-width: 1199px) {
+            display: block;
+            margin-left: auto;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: auto; 
+    }   
     }
 .contact-list__link {
    display: flex;
-    margin-left: 40px;
+    
 
     font-weight: 500;
     font-size: 14px;
@@ -11,14 +22,18 @@
     letter-spacing: 0.02em;
     color: $desc-color;
     align-items: center;
-    justify-content: center;
+    
     transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
     color: $logo-text-color;
     transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+   }
+   @media screen and (min-width: 1200px) {
+    margin-left: 40px;
+    justify-content: center;
+} 
 }
 
 .icon-mail, .icon-tel {
